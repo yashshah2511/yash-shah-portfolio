@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
          <Route path="/contact" element={<Contact />} />
         {/* Add other pages here */}
       </Routes>
+        <ToastContainer position="top-right" autoClose={3000} />
       <Footer />
     </div>
   );

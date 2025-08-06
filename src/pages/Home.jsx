@@ -1,6 +1,9 @@
 import React from "react";
 import { ArrowDownCircle } from "lucide-react";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import developer from "../assets/images/profile-pic.png";
+import resumePDF from "../assets/files/yash-shah-resume.pdf"; // your PDF path
 
 const Home = () => {
   return (
@@ -14,6 +17,7 @@ const Home = () => {
 
       {/* Main Container */}
       <div className="z-10 flex flex-col-reverse md:flex-row items-center gap-12">
+        
         {/* Text Section */}
         <div className="text-center md:text-left max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-wide text-gray-800 dark:text-white animate-fadeIn">
@@ -24,31 +28,65 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 animate-slideUp">
-            MSc IT Student • Backend Developer • Researcher • Faculty Mentor
+            Aspiring Data Scientist | Backend Developer | Machine Learning | Research Enthusiast
           </p>
 
           <p className="mt-3 text-base md:text-lg text-gray-700 dark:text-gray-400 leading-relaxed animate-slideUp delay-75">
-            I specialize in building scalable backend systems using Node.js and Express,
-            and delivering seamless frontend experiences using React and Angular.
-            With hands-on experience teaching ASP.NET MVC and Django, and active involvement
-            in research on the Metaverse, I bring a strong mix of development, leadership,
-            and innovation to every project.
+            I specialize in building scalable backend systems using Node.js and Express, with proven experience working across the MERN and MEAN stacks to deliver seamless full-stack applications.
+            With hands-on experience in Django and ASP.NET MVC, I have also taught these frameworks as a visiting faculty.
+            As a research paper author on the Metaverse, I bring a strong blend of development, leadership, and innovation to every project.
           </p>
 
-          <ul className="mt-4 text-sm md:text-base text-gray-600 dark:text-gray-400 space-y-2 animate-slideUp delay-100">
-            <li>✅ Developed full-stack projects like <b>Skyway</b> and <b>SkillSwap</b> using MERN & MEAN</li>
-            <li>🎓 Visiting Faculty for ASP.NET MVC and Django at LJ Institute</li>
-            <li>📚 Research Paper Presented at IFERP | Under Review for WOS Journal</li>
-            <li>🛠️ Proficient in Node.js, React, MongoDB, Express, Python & ML</li>
-          </ul>
+          {/* Social Icons */}
+          <div className="mt-6 flex gap-6 justify-center md:justify-start text-2xl text-gray-700 dark:text-gray-300">
+            <a
+              href="https://www.linkedin.com/in/shahyash010"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-500 transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/yashshah2511"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-500 transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.instagram.com/yashshah2511?igsh=N3Vxcm9laXdyb2Fo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-indigo-500 transition"
+            >
+              <FaInstagram />
+            </a>
+          </div>
 
-          {/* CTA Button */}
-          <a
-            href="#projects"
-            className="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-indigo-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:bg-indigo-600 transform transition duration-300 animate-fadeIn delay-200"
-          >
-            View My Work <ArrowDownCircle size={20} />
-          </a>
+          {/* Buttons */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            {/* Resume Button */}
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Yash_Shah_Resume.pdf"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full shadow hover:scale-105 transition"
+            >
+              📄 View Resume
+            </a>
+
+            {/* About Page Button */}
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-indigo-500 text-indigo-600 dark:text-indigo-400 font-semibold rounded-full hover:bg-indigo-100 dark:hover:bg-gray-800 transition"
+            >
+              👨‍💻 About Me
+            </Link>
+          </div>
+
         </div>
 
         {/* Image Section */}

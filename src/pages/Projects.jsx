@@ -2,19 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import projImg from "../assets/images/profile-pic.png"; // Add more as needed
+import projImg2 from "../assets/images/skyway.png"; // Add more as needed
+import projImg3 from "../assets/images/skillswap.png"; // Add more as needed
+import projImg4 from "../assets/images/Payment-Fraud-Detection_Overgraph.jpg"; // Add more as needed
 
 const projects = [
   {
-    image: projImg,
+    image: projImg2,
     title: "Flight Management System",
     description: "A full-stack MERN application to manage airline bookings and schedules.",
-    link: "https://github.com/your-repo",
+    link: "https://github.com/yashshah2511/skyway",
   },
   {
-    image: projImg,
+    image: projImg3,
     title: "Skill-Swap",
-    description: "Flutter-based marketplace app for swapping and selling items.",
-    link: "#",
+    description: "",
+    link: "https://github.com/arnoldhere/Skill-Swap",
+  },
+  {
+    image: projImg4,
+    title: "fraud detection on online payment method",
+    description: "",
+    link: "https://github.com/yashshah2511/Fraud_Detection_On_Online_Payment",
   },
 ];
 

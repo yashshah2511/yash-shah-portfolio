@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex justify-center gap-8 mb-8 text-2xl md:text-3xl">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/yashshah2511"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
           </a>
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/shahyash010"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </a>
           <a
-            href="https://instagram.com/your-profile"
+            href="https://www.instagram.com/yashshah2511?igsh=N3Vxcm9laXdyb2Fo"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
