@@ -32,9 +32,9 @@ const Home = () => {
           </p>
 
           <p className="mt-3 text-base md:text-lg text-gray-700 dark:text-gray-400 leading-relaxed animate-slideUp delay-75">
-            I specialize in building scalable backend systems using Node.js and Express, with proven experience working across the MERN and MEAN stacks to deliver seamless full-stack applications.
-            With hands-on experience in Django and ASP.NET MVC, I have also taught these frameworks as a visiting faculty.
-            As a research paper author on the Metaverse, I bring a strong blend of development, leadership, and innovation to every project.
+            I specialize in building scalable backend systems with Node.js, Express, and full-stack applications using the MERN & MEAN stacks.
+            With expertise in Django and ASP.NET MVC, I’ve also shared my knowledge as a visiting faculty.
+            Currently pursuing Data Science, I combine research on the Metaverse with development, leadership, and innovation.
           </p>
 
           {/* Social Icons */}

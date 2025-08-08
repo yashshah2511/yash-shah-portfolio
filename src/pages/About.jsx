@@ -25,22 +25,22 @@ const About = () => {
 
   const education = [
     {
-      title: "TOPS Technologies (Internship)",
-      inst: "Backend & Data Science Training",
+      title: "TOPS Technologies ",
+      inst: "Data Science ",
       year: "2025",
     },
     {
       title: "MSc IT",
       inst: "LJ Institute of Computer Applications",
-      year: "2025 - Present",
+      year: "2024 - 2026",
     },
     {
       title: "BSc IT",
       inst: "LJ Institute of Computer Applications",
       year: "2021 - 2024",
     },
-    { title: "HSC (12th)", inst: "Swaminarayan School", year: "2019 - 2021" },
-    { title: "SSC (10th)", inst: "Jeevan Bharti School", year: "2018 - 2019" },
+    { title: "HSC (12th)", inst: "Nav-Chetan School", year: "2020 - 2021" },
+    { title: "SSC (10th)", inst: "Nav-Chetan School", year: "2018 - 2019" },
   ];
 
   const experience = [
@@ -61,7 +61,7 @@ const About = () => {
   const research = {
     title: "Research Paper: Metaverse Demystified",
     org: "IFERP (ICRAECA)",
-    year: "Feb 2025",
+    year: "jul 2025",
     desc: "Presented a paper exploring the opportunities and risks of the Metaverse in digital transformation. Focused on immersive technologies, security challenges, and user experience in virtual environments.",
   };
 
@@ -88,11 +88,10 @@ const About = () => {
               Hi, I'm Yash Shah
             </h2>
             <p className="text-lg leading-relaxed">
-              I'm an MSc IT student and passionate backend developer focused on
-              building secure, scalable web applications. Proficient in MERN and
-              MEAN stacks, I also teach technologies like ASP.NET MVC and Django
-              as a visiting faculty. I'm currently researching Metaverse
-              security and have presented papers at academic conferences.
+             I’m an Aspiring Data Scientist and Backend Developer skilled in Node.js, Express, MERN/MEAN stacks, Django, and ASP.NET MVC, with experience as a visiting faculty in web development. I’ve completed Data Science training with TOPS Technologies, gaining expertise in Python libraries (NumPy, Pandas, Matplotlib, Seaborn), Power BI, Excel, SQL, and Machine Learning. I’ve also authored a research paper on Metaverse Security.
+Beyond tech, I’m a National-level Basketball Player and Event Manager, leading and organizing large-scale events like weddings and corporate functions.
+
+
             </p>
             <Link
               to="/projects"
