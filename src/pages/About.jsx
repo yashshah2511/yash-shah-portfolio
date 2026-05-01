@@ -1,19 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import yashImage from "../assets/images/profile-pic.png";
+import yashImage from "../assets/images/about-image.jpeg";
 
 const About = () => {
-  const languages = ["C/C++", "C#", "Python", "Java", "JavaScript"];
-  const databases = ["SQL", "MongoDB"];
-  const frameworks = [
-    "ExpressJS",
-    "NodeJS",
-    "AngularJS",
-    "DotNet MVC",
-    "Django",
-    "ReactJS",
-  ];
+  const languages = ["C/C++", "C#", "Python"];
+  const databases  = ["MySQL", "MongoDB"];
+  const frameworks = ["NodeJS","DotNet MVC","Django","ReactJS","FastAPI",];
+  const datascience = ["Machine Learning", "Deep Learning", "Computer Vision", "LLM", "Model Training", "Data Preprocessing", "Model Evaluation"];
+
+  const libraries = ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "TensorFlow",];
+
+  const tools = ["Git & GitHub", "VS Code", "Jupyter Notebook","Postman"];
+
+  const specialities=["YOLO Object Detection", "Real-Time Video Processing & Object Tracking","API Development & Integration (FastAPI)","Frontend-Backend Integration"]
 
   const softSkills = [
     "Quick Adaptability",
@@ -45,6 +45,14 @@ const About = () => {
 
   const experience = [
     {
+      
+      role: "AI/ML Intern",
+      company: "Hyperlink Infosystem",
+      year: "Jan 2026-present",
+      desc: "Worked on real-world AI/ML projects using Python, including computer vision applications with YOLO for object detection. Built and deployed models using FastAPI, and integrated them with frontend applications. Gained hands-on experience in data processing, model training, and real-time systems.",
+    },
+    {
+      
       role: "Visiting Faculty – ASP.NET MVC",
       company: "LJICA",
       year: "Jan 2025",
@@ -88,11 +96,14 @@ const About = () => {
               Hi, I'm Yash Shah
             </h2>
             <p className="text-lg leading-relaxed">
-             I’m an Aspiring Data Scientist and Backend Developer skilled in Node.js, Express, MERN/MEAN stacks, Django, and ASP.NET MVC, with experience as a visiting faculty in web development. I’ve completed Data Science training with TOPS Technologies, gaining expertise in Python libraries (NumPy, Pandas, Matplotlib, Seaborn), Power BI, Excel, SQL, and Machine Learning. I’ve also authored a research paper on Metaverse Security.
-Beyond tech, I’m a National-level Basketball Player and Event Manager, leading and organizing large-scale events like weddings and corporate functions.
+             I am an AI/ML developer with a strong interest in building intelligent and scalable systems. My core expertise lies in Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Large Language Models (LLMs).
 
+Currently, I am working as an AI/ML Intern at Hyperlink InfoSystem, where I gain hands-on experience in developing real-world AI solutions, including object detection, NLP-based systems, and model deployment using FastAPI.
 
-            </p>
+I have practical experience in data preprocessing, feature engineering, model training, and integrating AI into applications. Alongside AI, I also have a strong foundation in backend and full-stack development, which helps me build complete end-to-end solutions.
+
+I enjoy solving real-world problems using data-driven approaches, continuously learning new technologies, and exploring advanced areas like LLMs and intelligent automation.
+</p>
             <Link
               to="/projects"
               className="inline-block mt-6 px-6 py-3 rounded-full bg-indigo-500 text-white hover:bg-indigo-600 shadow transition"
@@ -133,73 +144,113 @@ Beyond tech, I’m a National-level Basketball Player and Event Manager, leading
 
         {/* Technical + Soft Skills Side by Side */}
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-3xl font-bold mb-6">🧠 Technical Skills</h3>
+  {/* LEFT SIDE - TECHNICAL */}
+  <div>
+    <h3 className="text-3xl font-bold mb-6">🧠 Technical Skills</h3>
 
-            {/* Languages */}
-            <div className="mb-6">
-              <h4 className="text-xl font-semibold mb-3">Languages</h4>
-              <div className="flex flex-wrap gap-3">
-                {languages.map((lang, i) => (
-                  <span
-                    key={i}
-                    className="bg-indigo-100 dark:bg-indigo-800 text-indigo-700 dark:text-white px-4 py-2 rounded-full text-sm font-medium shadow"
-                  >
-                    {lang}
-                  </span>
-                ))}
-              </div>
-            </div>
+    {/* Languages */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Languages</h4>
+      <div className="flex flex-wrap gap-3">
+        {languages.map((lang, i) => (
+          <span key={i} className="bg-indigo-100 dark:bg-indigo-800 text-indigo-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {lang}
+          </span>
+        ))}
+      </div>
+    </div>
 
-            {/* Databases */}
-            <div className="mb-6">
-              <h4 className="text-xl font-semibold mb-3">Databases</h4>
-              <div className="flex flex-wrap gap-3">
-                {databases.map((db, i) => (
-                  <span
-                    key={i}
-                    className="bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-white px-4 py-2 rounded-full text-sm font-medium shadow"
-                  >
-                    {db}
-                  </span>
-                ))}
-              </div>
-            </div>
+    {/* Databases */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Databases</h4>
+      <div className="flex flex-wrap gap-3">
+        {databases.map((db, i) => (
+          <span key={i} className="bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {db}
+          </span>
+        ))}
+      </div>
+    </div>
 
-            {/* Frameworks */}
-            <div>
-              <h4 className="text-xl font-semibold mb-3">Frameworks</h4>
-              <div className="flex flex-wrap gap-3">
-                {frameworks.map((fw, i) => (
-                  <span
-                    key={i}
-                    className="bg-pink-100 dark:bg-pink-800 text-pink-700 dark:text-white px-4 py-2 rounded-full text-sm font-medium shadow"
-                  >
-                    {fw}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
+    {/* Frameworks */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Frameworks & Technologies</h4>
+      <div className="flex flex-wrap gap-3">
+        {frameworks.map((fw, i) => (
+          <span key={i} className="bg-pink-100 dark:bg-pink-800 text-pink-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {fw}
+          </span>
+        ))}
+      </div>
+    </div>
 
-          {/* Soft Skills */}
-          <div>
-            <h3 className="text-3xl font-bold mb-6">💡 Soft Skills</h3>
-            <ul className="space-y-4 text-lg list-disc list-inside">
-              {softSkills.map((skill, i) => (
-                <motion.li
-                  key={i}
-                  className="text-gray-700 dark:text-gray-300"
-                  initial={{ opacity: 0, x: 10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.1 }}
-                >
-                  {skill}
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-        </div>
+    {/* Data Science */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Data Science & AI</h4>
+      <div className="flex flex-wrap gap-3">
+        {datascience.map((ds, i) => (
+          <span key={i} className="bg-green-100 dark:bg-green-800 text-green-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {ds}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* Libraries */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Libraries</h4>
+      <div className="flex flex-wrap gap-3">
+        {libraries.map((lib, i) => (
+          <span key={i} className="bg-yellow-100 dark:bg-yellow-800 text-yellow-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {lib}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* Tools */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Tools</h4>
+      <div className="flex flex-wrap gap-3">
+        {tools.map((tool, i) => (
+          <span key={i} className="bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {tool}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* Specialities */}
+    <div className="mb-6">
+      <h4 className="text-xl font-semibold mb-3">Specialities</h4>
+      <div className="flex flex-wrap gap-3">
+        {specialities.map((sp, i) => (
+          <span key={i} className="bg-red-100 dark:bg-red-800 text-red-700 dark:text-white px-4 py-2 rounded-full text-sm shadow">
+            {sp}
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  {/* RIGHT SIDE - SOFT SKILLS */}
+  <div>
+    <h3 className="text-3xl font-bold mb-6">💡 Soft Skills</h3>
+    <ul className="space-y-4 text-lg list-disc list-inside">
+      {softSkills.map((skill, i) => (
+        <motion.li
+          key={i}
+          className="text-gray-700 dark:text-gray-300"
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, delay: i * 0.1 }}
+        >
+          {skill}
+        </motion.li>
+      ))}
+    </ul>
+  </div>
+</div>
 
         <hr className="border-gray-300 dark:border-gray-700" />
 

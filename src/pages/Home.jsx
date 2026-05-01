@@ -2,8 +2,8 @@ import React from "react";
 import { ArrowDownCircle } from "lucide-react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import developer from "../assets/images/profile-pic.png";
-import resumePDF from "../assets/files/yash-shah-resume.pdf"; // your PDF path
+import developer from "../assets/images/profile-pic2.png"; // your image path
+import resumePDF from "../assets/files/yash-shsh-resume.pdf"; // your PDF path
 
 const Home = () => {
   return (
@@ -28,19 +28,20 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 animate-slideUp">
-            Aspiring Data Scientist | Backend Developer | Machine Learning | Research Enthusiast
+            AI/ML Engineer | Full-Stack Developer |  Research Enthusiast
           </p>
 
           <p className="mt-3 text-base md:text-lg text-gray-700 dark:text-gray-400 leading-relaxed animate-slideUp delay-75">
-            I specialize in building scalable backend systems with Node.js, Express, and full-stack applications using the MERN & MEAN stacks.
-            With expertise in Django and ASP.NET MVC, I’ve also shared my knowledge as a visiting faculty.
-            Currently pursuing Data Science, I combine research on the Metaverse with development, leadership, and innovation.
+            I build intelligent systems using Machine Learning, Deep Learning, Computer Vision, NLP, and LLMs.
+Currently an AI/ML Intern at Hyperlink InfoSystem, working on real-time AI solutions with Python, YOLO, OpenCV, and FastAPI.
+Passionate about solving real-world problems through data-driven innovation.
+
           </p>
 
           {/* Social Icons */}
           <div className="mt-6 flex gap-6 justify-center md:justify-start text-2xl text-gray-700 dark:text-gray-300">
             <a
-              href="https://www.linkedin.com/in/shahyash010"
+              href="https://www.linkedin.com/in/yashshah010/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-indigo-500 transition"

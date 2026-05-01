@@ -45,15 +45,15 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-bold mb-2">📍 Address</h3>
             <p className="text-gray-700 dark:text-gray-300">
-              SwapZone HQ,<br />
-              Khanpur, Ahmedabad, Gujarat,<br />
+              Ahmedabad,<br />
+               Gujarat,<br />
               India - 380001
             </p>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold mb-2">📧 Email</h3>
-            <p className="text-gray-700 dark:text-gray-300">yashshah.dev@gmail.com</p>
+            <p className="text-gray-700 dark:text-gray-300">yashshah4122002@gmail.com</p>
           </div>
 
           <div>

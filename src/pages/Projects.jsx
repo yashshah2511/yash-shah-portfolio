@@ -5,6 +5,7 @@ import projImg from "../assets/images/profile-pic.png"; // Add more as needed
 import projImg2 from "../assets/images/skyway.png"; // Add more as needed
 import projImg3 from "../assets/images/skillswap.png"; // Add more as needed
 import projImg4 from "../assets/images/Payment-Fraud-Detection_Overgraph.jpg"; // Add more as needed
+import projImg5 from "../assets/images/swapzone.jpeg"; // Add more as needed
 
 const projects = [
   {
@@ -24,6 +25,12 @@ const projects = [
     title: "fraud detection on online payment method",
     description: "",
     link: "https://github.com/yashshah2511/Fraud_Detection_On_Online_Payment",
+  },
+  {
+    image: projImg5,
+    title: "swapzone",
+    description: "",
+    link: "https://github.com/yashshah2511/swapzone",
   },
 ];
 

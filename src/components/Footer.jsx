@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
           </a>
           <a
-            href="https://www.linkedin.com/in/shahyash010"
+            href="https://www.linkedin.com/in/yashshah010/"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative"
