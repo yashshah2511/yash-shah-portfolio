@@ -3,34 +3,71 @@ import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 import projImg from "../assets/images/profile-pic.png"; // Add more as needed
 import projImg2 from "../assets/images/skyway.png"; // Add more as needed
-import projImg3 from "../assets/images/skillswap.png"; // Add more as needed
+import skillswap from "../assets/images/skillswap.jpeg"; // Add more as needed
 import projImg4 from "../assets/images/Payment-Fraud-Detection_Overgraph.jpg"; // Add more as needed
 import projImg5 from "../assets/images/swapzone.jpeg"; // Add more as needed
+import neurohire from "../assets/images/neurohire.jpeg"; // Add more as needed
+import creditcarddl from "../assets/images/credit_card_dl.jpeg"
+import employeetracker from "../assets/images/employee_tracker.jpeg"
+import fashionmnist from "../assets/images/fashion_mnist.jpeg"
+import nyctaxi from "../assets/images/nyctaxi.jpeg"
 
 const projects = [
+   {
+    image: neurohire,
+    title: "NeuroHire - AI-Powered Recruitment Platform",
+    description: "AI-powered resume screening and candidate evaluation system.",
+    link: "https://github.com/yashshah2511/Neurohire",
+  },
+   {
+    image: creditcarddl,
+    title: "Credit Card Fraud Detection using Deep Learning",
+    description: "Detecting suspicious and fraudulent transactions using deep learning models.",
+    link: "https://github.com/yashshah2511/Credit-Card-Fraud-Detection-using-Deep-Learning",
+  },
+   {
+    image: employeetracker,
+    title: "Employee Tracker - Real-Time Object Detection & Tracking",
+    description: "Detecting employees using YOLO-based object detection.",
+    link: "https://github.com/yashshah2511/real-time-employee-tracking",
+  },
+
   {
-    image: projImg2,
-    title: "Flight Management System",
-    description: "A full-stack MERN application to manage airline bookings and schedules.",
-    link: "https://github.com/yashshah2511/skyway",
+    image: fashionmnist,
+    title: "Fashion MNIST Classification using Deep Learning",
+    description: "Predicting clothing categories using deep learning models.",
+    link: "https://github.com/yashshah2511/Fashion-mnist#fashion-mnist-classification-using-deep-learning",
   },
   {
-    image: projImg3,
+    image: nyctaxi,
+    title: "NYC taxi fare prediction",
+    description: "Predicting taxi trip duration using machine learning based on real-world data.",
+    link: "https://github.com/yashshah2511/nyc-taxi-trip-prediction",
+  },
+  
+  {
+    image: skillswap,
     title: "Skill-Swap",
-    description: "",
+    description: "Real-time communication between users for seamless skill exchange.",
     link: "https://github.com/arnoldhere/Skill-Swap",
   },
   {
     image: projImg4,
     title: "fraud detection on online payment method",
-    description: "",
+    description: "Detecting fraudulent transactions in real-time.",
     link: "https://github.com/yashshah2511/Fraud_Detection_On_Online_Payment",
   },
   {
     image: projImg5,
     title: "swapzone",
-    description: "",
+    description: "A platform for exchanging skills and knowledge.",
     link: "https://github.com/yashshah2511/swapzone",
+  },
+  {
+    image: projImg2,
+    title: "Flight Management System",
+    description: "A full-stack MERN application to manage airline bookings and schedules.",
+    link: "https://github.com/yashshah2511/skyway",
   },
 ];
 
