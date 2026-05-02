@@ -2,19 +2,20 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import ContactForm from "../components/ContactForm";
 import { toast } from "react-toastify";
+import { sendEmail } from "../services/EmailServices";
 
 const Contact = () => {
   // Show toast once when the component mounts
   useEffect(() => {
-    toast.info(" This page is under developing phase", {
-      position: "top-center",
-      autoClose: 4000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      theme: "colored",
-    });
+    // toast.info(" This page is under developing phase", {
+    //   position: "top-center",
+    //   autoClose: 4000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   theme: "colored",
+    // });
   }, []);
 
   return (
